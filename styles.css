@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+} 
+
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1f2937;
+    padding: 20px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.header-logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.header-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.header-links li {
+    margin: 0 15px; 
+}
+
+.header-links {
+    display: flex;
+}
+
+.header-links a {
+    text-decoration: none;
+    color: #ffffff; 
+    font-size: 1rem; 
+}
+
+.first-section {
+    padding: 100px 200px;
+    display: flex;
+    align-items: stretch;
+    background-color: #1f2937;
+    color: #ffffff;
+    justify-content: space-between;
+}
+
+.image-placeholder {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    background-color: #e5e7eb;
+    color: #1f2937;
+    box-sizing: border-box;
+}
+
+.intro {
+    flex: 1;
+    padding: 0 20px; 
+    box-sizing: border-box; 
+}
+
+button {
+    background-color: #00bcd4; /* Primary button color */
+    color: #ffffff; /* White text */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px 20px; /* Add padding for size */
+    font-size: 1rem; /* Adjust font size */
+    font-weight: bold; /* Make text bold */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth hover effect */
+}
+
+button:hover {
+    background-color: #0097a7; /* Darker shade on hover */
+    transform: scale(1.05); /* Slightly enlarge the button */
+}
+
+button:active {
+    background-color: #007c91; /* Even darker shade when clicked */
+    transform: scale(0.95); /* Slightly shrink the button */
+}
