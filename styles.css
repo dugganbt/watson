@@ -10,6 +10,7 @@ html, body {
     box-sizing: border-box;
 }
 
+/* Header Styles */
 .header-container {
     display: flex;
     flex-direction: row;
@@ -49,6 +50,7 @@ html, body {
     font-size: 1rem; 
 }
 
+/* First Section Styles */
 .first-section {
     padding: 100px 200px;
     display: flex;
@@ -75,6 +77,51 @@ html, body {
     box-sizing: border-box; 
 }
 
+.features {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.features-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    gap: 20px; /* Space between features */
+}
+
+.rounded-box-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center items horizontally */
+    word-wrap: break-word;
+}
+
+.rounded-box {
+    width: 300px; /* Set the width of the box */
+    height: 200px; /* Set the height of the box */
+    border: 2px solid #00bcd4; /* Add a 2px solid border to all sides */
+    border-width: 2px; /* Set the border width */
+    border-radius: 15px; /* Rounds the edges of the box */
+    padding: 20px; /* Add padding inside the box */
+    text-align: center; /* Center the text horizontally */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+}
+
+.rounded-box-subscript {
+    margin-top: 10px; /* Add spacing between the box and the text */
+    color: #1f2937; /* Text color */
+    font-size: 0.9rem; /* Adjust font size */
+    word-wrap: break-word; /* Ensure long words break properly */
+    max-width: 300px; /* Ensure the text doesn't exceed the box width */
+}
+
+/* General component Styles */
 button {
     background-color: #00bcd4; /* Primary button color */
     color: #ffffff; /* White text */
