@@ -77,6 +77,7 @@ html, body {
     box-sizing: border-box; 
 }
 
+/* Features section */
 .features {
     display: flex;
     flex-direction: column;
@@ -121,6 +122,60 @@ html, body {
     max-width: 300px; /* Ensure the text doesn't exceed the box width */
 }
 
+/* Quotes section */
+.quote-section {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f3f4f6; /* Light background for contrast */
+}
+
+.quote-author {
+    font-style: italic;
+    color: #6b7280; /* Gray color for the author */
+    margin-top: 10px; /* Space between quote and author */
+    text-align: right;
+    margin-right: 30%;
+}
+
+/* Fourth section */
+.fourth-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.call-to-action {
+    background-color: #0e434a; /* Primary call to action color */
+    color: #ffffff; /* White text */
+    padding: 20px;
+    width: 60%;
+    border-radius: 10px; /* Rounded corners */
+    margin-top: 10px; /* Space above the call to action */
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    gap: 20px; /* Add space between the div and the button */
+    align-items: center;
+}
+
+.call-to-action div {
+    flex: 1; /* Allow the div to take up as much space as possible */
+}
+
+.call-to-action h1 {
+    font-size: 2rem; /* Adjust heading size */
+    margin: 0; /* Remove default margin */
+}
+
+.call-to-action p {
+    font-size: 1rem; /* Adjust the font size of the paragraph */
+    margin: 0; /* Remove default margins */
+}
+
 /* General component Styles */
 button {
     background-color: #00bcd4; /* Primary button color */
@@ -132,6 +187,9 @@ button {
     font-weight: bold; /* Make text bold */
     cursor: pointer; /* Change cursor to pointer on hover */
     transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth hover effect */
+    flex-shrink: 0; /* Prevent the button from shrinking */
+    flex-grow: 0; /* Prevent the button from growing */
+    height: auto;
 }
 
 button:hover {
@@ -142,4 +200,12 @@ button:hover {
 button:active {
     background-color: #007c91; /* Even darker shade when clicked */
     transform: scale(0.95); /* Slightly shrink the button */
+}
+
+/* Footer section */
+footer {
+    background-color: #1f2937; /* Dark background for footer */
+    color: #ffffff; /* White text */
+    padding: 20px;
+    text-align: center;
 }
