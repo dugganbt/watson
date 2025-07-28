@@ -112,6 +112,15 @@ html, body {
     text-align: center; /* Center the text horizontally */
     justify-content: center; /* Center content horizontally */
     align-items: center; /* Center content vertically */
+    display: flex; /* Enable Flexbox */
+}
+
+.rounded-box i {
+    font-size: 9rem; /* Make the icon larger to fill the box */
+    color: #00bcd4; /* Icon color */
+    flex-shrink: 0; /* Prevent the icon from shrinking */
+    max-width: 100%; /* Ensure the icon doesn't overflow the box */
+    max-height: 100%; /* Ensure the icon doesn't overflow the box */
 }
 
 .rounded-box-subscript {
@@ -149,10 +158,13 @@ html, body {
 }
 
 .call-to-action {
-    background-color: #0e434a; /* Primary call to action color */
+    background-color: #1c9bab; /* Primary call to action color */
     color: #ffffff; /* White text */
     padding: 20px;
     width: 60%;
+    height: auto; /* Allow height to adjust based on content */
+    min-height: 100px; /* Ensure the box is at least 300px tall */
+
     border-radius: 10px; /* Rounded corners */
     margin-top: 10px; /* Space above the call to action */
     text-align: left;
